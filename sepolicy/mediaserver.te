@@ -1,0 +1,2 @@
+allow mediaserver camera_device:chr_file { ioctl read write open };
+allow mediaserver system_prop:property_service set;

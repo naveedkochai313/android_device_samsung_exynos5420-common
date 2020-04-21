@@ -1,0 +1,1 @@
+allow uncrypt gpsd_exec:file getattr;
