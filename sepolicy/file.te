@@ -13,3 +13,4 @@ type modem_block_device, dev_type;
 type log_device, dev_type, mlstrustedobject;
 type emmcblk_device, file_type;
 type gpsd_exec, exec_type, file_type;
+type proc_info, file_type;
