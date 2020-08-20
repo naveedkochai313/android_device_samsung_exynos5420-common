@@ -1,4 +1,0 @@
-allow mediacodec sysfs:dir { open read };
-
-# /sys/class/video4linux/video6/name
-allow mediacodec sysfs:file { r_file_perms getattr };

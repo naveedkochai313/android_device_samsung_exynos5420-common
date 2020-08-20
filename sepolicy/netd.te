@@ -1,2 +1,0 @@
-allow netd gpsd_exec:file getattr;
-allow netd kernel:system module_request;

@@ -1,3 +1,0 @@
-allow hal_camera_default gpsd_exec:file getattr;
-allow hal_camera_default sysfs:file { open read getattr };
-allow hal_camera_default vndbinder_device:chr_file { ioctl open read write };

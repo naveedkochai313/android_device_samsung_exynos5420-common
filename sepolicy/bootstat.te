@@ -1,2 +1,0 @@
-allow bootstat sysfs:file read;
-allow bootstat gpsd_exec:file getattr;

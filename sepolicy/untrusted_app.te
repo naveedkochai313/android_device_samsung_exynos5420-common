@@ -1,5 +1,2 @@
-allow untrusted_app gpsd_exec:file getattr;
-allow untrusted_app sysfs:dir { read getattr };
-allow untrusted_app sysfs:file { read open getattr };
 allow untrusted_app proc_info:file { read open getattr };
 allow untrusted_app proc_info:dir { getattr search };

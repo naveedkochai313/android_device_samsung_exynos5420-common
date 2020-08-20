@@ -1,2 +1,0 @@
-allow shell gpsd_exec:file getattr;
-allow shell sysfs:file { open read getattr };
