@@ -1,0 +1,1 @@
+type hal_vendor_surfaceflinger_hwservice, hwservice_manager_type;

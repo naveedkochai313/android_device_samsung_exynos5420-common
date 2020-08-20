@@ -1,0 +1,6 @@
+# Remove lines from logcat:
+#   denied { module_request } for kmod="ipt_IDLETIMER" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system
+# Discussed in https://groups.google.com/g/android-porting/c/0e5RrrvQ2MU?pli=1
+dontaudit netd kernel:system module_request;
+
+allow netd init:tcp_socket rw_socket_perms;

@@ -1,0 +1,26 @@
+allow init cgroup:file create;
+allow init kernel:system module_request;
+allow init tmpfs:lnk_file create;
+allow init socket_device:sock_file unlink;
+
+allow init block_device:blk_file write;
+allow init camera_device:file setattr;
+allow init debugfs:file write;
+allow init gpsd_exec:file { execute open read };
+allow init sensor_device:file setattr;
+
+allow init gps_device:chr_file rw_file_perms;
+allow init dnsproxyd_socket:sock_file write;
+allow init fwmarkd_socket:sock_file write;
+allow init gps_data_file:fifo_file write;
+allow init gps_data_file:file lock;
+allow init netd:unix_stream_socket connectto;
+allow init node:tcp_socket node_bind;
+allow init port:tcp_socket { name_connect name_bind };
+allow init self:netlink_kobject_uevent_socket { bind create setopt };
+allow init self:tcp_socket create_socket_perms_no_ioctl;
+allow init system_server:unix_stream_socket read;
+
+allow init servicemanager:binder call;
+allow init system_server:binder call;
+allow init system_server:fd use;

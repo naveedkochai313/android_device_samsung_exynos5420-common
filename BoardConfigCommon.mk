@@ -144,6 +144,9 @@ BOARD_USES_WFD := true
 # Audio blobs
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
+# Sepolicy
+BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
+
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI          := true
 BOARD_WLAN_DEVICE                := bcmdhd

@@ -1,0 +1,4 @@
+allow ueventd camera_device:file relabelto;
+allow ueventd sensor_device:dir relabelto;
+allow ueventd sensor_device:file relabelto;
+allow ueventd sensor_device:lnk_file relabelto;

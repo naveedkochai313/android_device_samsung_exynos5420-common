@@ -1,1 +1,19 @@
-genfscon proc /sys/kernel u:object_r:proc_info:s0
+# proc labels
+genfscon proc /sys/kernel                         u:object_r:proc_info:s0
+
+# sysfs labels
+genfscon sysfs /devices/virtual/camera            u:object_r:sysfs_camera:s0
+
+# video4linux
+genfscon sysfs /devices/platform/exynos-sysmmu.0/s5p-mfc-v6/video4linux u:object_r:sysfs_v4l:s0
+
+# mali debugfs
+genfscon debugfs /mali/                           u:object_r:debugfs_mali:s0
+genfscon debugfs /mali/mem/                       u:object_r:debugfs_mali_mem:s0
+
+# ion debugfs
+genfscon debugfs /ion/                            u:object_r:debugfs_ion:s0
+genfscon debugfs /ion/dma_buf                     u:object_r:debugfs_ion_dma:s0
+
+# tracefs
+genfscon tracefs /tracing/                        u:object_r:tracefs:s0

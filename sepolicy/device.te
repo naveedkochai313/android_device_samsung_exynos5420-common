@@ -4,3 +4,9 @@ type ump_device, dev_type;
 
 # /dev/umts_boot*, /dev/ehci_power
 type mif_device, dev_type;
+
+# /dev/rfkill
+type wlan_device, dev_type;
+
+type sensor_device, dev_type;
+type gps_device, dev_type;

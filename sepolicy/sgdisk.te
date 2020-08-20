@@ -1,0 +1,1 @@
+allow sgdisk sysfs_devices_system_cpu:file rw_file_perms;

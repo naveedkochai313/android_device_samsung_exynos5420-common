@@ -1,0 +1,5 @@
+allow hal_camera_default vndbinder_device:chr_file rw_file_perms;
+allow hal_camera_default sysfs_devices_system_cpu:file read;
+allow hal_camera_default init:unix_stream_socket connectto;
+allow hal_camera_default property_socket:sock_file write;
+allow hal_camera_default camera_device:file r_file_perms;

@@ -1,0 +1,2 @@
+allow crash_dump sysfs_devices_system_cpu:file r_file_perms;
+allow crash_dump init:process { signal };

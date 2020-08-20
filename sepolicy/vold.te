@@ -1,0 +1,3 @@
+allow vold cache_file:dir write;
+allow vold efs_file:dir read;
+allow vold hidden_block_device:dir write;

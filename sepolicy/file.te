@@ -1,16 +1,37 @@
-type sysfs_input_file, fs_type, sysfs_type;
+### efs types
 type wifi_efs_file, fs_type;
 type bin_nv_data_efs_file, file_type;
 type app_efs_file, file_type;
+type drm_efs_file, file_type;
 type imei_efs_file, file_type;
+type sensor_efs_file, file_type;
+
+### sysfs types
 allow sysfs_type tmpfs:filesystem associate;
+type sysfs_input_file, fs_type, sysfs_type;
+type sysfs_graphics, fs_type, sysfs_type;
 type sysfs_mdnie_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_mipi_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_multipdp_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_usb_power_writable, fs_type, sysfs_type, mlstrustedobject;
-type preloader_block_device, dev_type;
+type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_v4l, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_wifi, fs_type, sysfs_type;
+
 type modem_block_device, dev_type;
+type hidden_block_device, dev_type;
+type preloader_block_device, dev_type;
 type log_device, dev_type, mlstrustedobject;
 type emmcblk_device, file_type;
 type gpsd_exec, exec_type, file_type;
 type proc_info, file_type;
+
+# debugfs types
+type debugfs_mali, fs_type, debugfs_type;
+type debugfs_mali_mem, fs_type, debugfs_type;
+type debugfs_ion, fs_type, debugfs_type;
+type debugfs_ion_dma, fs_type, debugfs_type;
+
+type tracefs, fs_type, debugfs_type;
+
+allow debugfs_type debugfs:filesystem associate;

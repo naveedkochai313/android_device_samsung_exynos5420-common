@@ -1,2 +1,0 @@
-allow untrusted_app proc_info:file { read open getattr };
-allow untrusted_app proc_info:dir { getattr search };
