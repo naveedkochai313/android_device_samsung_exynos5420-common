@@ -11,7 +11,6 @@ allow system_server app_efs_file:dir search;
 
 allow system_server kernel:process setsched;
 
-
 # memtrack HAL
 allow system_server debugfs:dir r_dir_perms;
 allow system_server debugfs_mali:dir r_dir_perms;
@@ -21,3 +20,5 @@ allow system_server debugfs:dir read;
 allow system_server sensor_device:dir search;
 allow system_server sensor_device:file r_file_perms;
 allow system_server unlabeled:file unlink;
+
+allow system_server crash_dump:process getpgid;

@@ -1,3 +1,6 @@
 allow vold cache_file:dir write;
-allow vold efs_file:dir read;
+allow vold cache_file:dir { add_name remove_name write };
+allow vold cache_file:file { create open unlink write };
 allow vold hidden_block_device:dir write;
+allow vold efs_file:dir { read add_name getattr ioctl open remove_name write };
+allow vold efs_file:file { create unlink };

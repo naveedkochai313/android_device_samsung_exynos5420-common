@@ -1,2 +1,6 @@
 allow crash_dump sysfs_devices_system_cpu:file r_file_perms;
 allow crash_dump init:process { signal };
+allow crash_dump sysfs:file { open read };
+allow crash_dump app_data_file:dir getattr;
+allow crash_dump app_data_file:file { getattr open read };
+allow crash_dump media_rw_data_file:dir search;

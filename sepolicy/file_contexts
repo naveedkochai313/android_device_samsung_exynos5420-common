@@ -105,3 +105,5 @@
 /sys/devices/virtual/sec/sec_touchkey/tsp_keys_enabled                  u:object_r:sysfs_input_file:s0
 
 /sys/devices/platform/exynos-sysmmu.0/s5p-mfc-v6/video4linux(/.*)?      u:object_r:sysfs_v4l:s0
+
+/preload/misc/vold/bench                                                u:object_r:efs_file:s0
