@@ -3,6 +3,11 @@
 # the init.universal5420.rc file closer to stock.
 #
 
+on init
+    # Create cgroup mount points for process groups
+    chmod 0666 /dev/cpuctl
+    chown system system /dev/cpuctl
+
 on post-fs-data
 # SA, System SW, SAMSUNG create log directory
     mkdir /data/log 0775 system log
